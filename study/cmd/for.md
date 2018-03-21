@@ -50,6 +50,6 @@ for %%i in (bbs,bathome,net) do echo %%i -- 输出三行
 	pause
 
 
-reference:
+reference:   
 https://www.cnblogs.com/DswCnblog/p/5435300.html   
 http://blog.csdn.net/wh_19910525/article/details/7912440
