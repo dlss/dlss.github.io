@@ -1,16 +1,14 @@
 # 1. for /f (解析文本)
 ## 1.1 切分字符串的利器：delims=
 ## 1.2 定点提取：tokens=
-### tokens=1,*
-### tokens=1-3
-### tokens=1,3,7
 ## 1.3 跳过无关内容，直奔主题：skip=n
 ## 1.4 忽略以指定字符打头的行：eol=
 ## 1.5 userbackq
 ## 1.5 变量延迟
 ## 示例：
-for /f "eol=# delims=, tokens=1-3" %%i in (%~dp0repoInfo.txt) do command
-for /f "eol=# delims=, tokens=1,*" %%i in (%~dp0repoInfo.txt) do command
+for /f "eol=# delims=, tokens=1-3" %%i in (%~dp0repoInfo.txt) do command -- 用","切割, 获取第1,2,3
+for /f "eol=# delims=, tokens=1,*" %%i in (%~dp0repoInfo.txt) do command -- 用","切割, 获取第1和剩下所有的
+for /f "eol=# delims=, tokens=1,3,7" %%i in (%~dp0repoInfo.txt) do command -- 用","切割, 获取第1,3,7三个
 
 # 2. for /r (递归遍历)
 ## 格式: for /r 目录 %%i in (元素集合) do 命令语句集合
