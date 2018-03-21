@@ -6,9 +6,9 @@
 ## 1.5 userbackq
 ## 1.5 变量延迟
 ## 示例：
-for /f "eol=# delims=, tokens=1-3" %%i in (%~dp0repoInfo.txt) do command -- 用","切割, 获取第1,2,3
-for /f "eol=# delims=, tokens=1,*" %%i in (%~dp0repoInfo.txt) do command -- 用","切割, 获取第1和剩下所有的
-for /f "eol=# delims=, tokens=1,3,7" %%i in (%~dp0repoInfo.txt) do command -- 用","切割, 获取第1,3,7三个
+for /f "eol=# delims=, tokens=1-3" %%i in (%~dp0repoInfo.txt) do command -- 用","切割, 获取第1,2,3   
+for /f "eol=# delims=, tokens=1,*" %%i in (%~dp0repoInfo.txt) do command -- 用","切割, 获取第1和剩下所有的   
+for /f "eol=# delims=, tokens=1,3,7" %%i in (%~dp0repoInfo.txt) do command -- 用","切割, 获取第1,3,7三个   
 
 # 2. for /r (递归遍历)
 ## 格式: for /r 目录 %%i in (元素集合) do 命令语句集合
