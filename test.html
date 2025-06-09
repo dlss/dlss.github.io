@@ -13,13 +13,15 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
+            text-align: center; /* 确保内容居中 */
         }
         .content {
-            text-align: center;
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%; /* 设置内容宽度，避免过宽 */
+            margin: 0 auto; /* 水平居中 */
         }
         h1 {
             font-weight: bold;
@@ -28,12 +30,16 @@
         p {
             line-height: 1.6;
         }
+        .date {
+            text-align: right; /* 右对齐 */
+            margin-bottom: 20px; /* 添加一些间距 */
+        }
     </style>
 </head>
 <body>
     <div class="content">
         <h1>蝶恋花·清明</h1>
-        <p>2019清明<p>
+        <p class="date">2019清明</p>
         <p>陨音悠长思绪飞，霞光铺田，村西牧童行。畅想天外高楼处，花花绿绿好世界。</p>
         <p>忽闻远处唤归声，拍背催牛，村中去匆匆。非为往昔真绝好，无忧无虑双亲在。</p>
     </div>
